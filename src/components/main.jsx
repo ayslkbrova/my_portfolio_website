@@ -2,7 +2,12 @@ import Nav from "./nav"
 
 const main = () => {
   return (
-   <Nav/>
+
+  <div>
+    <Nav/>
+  </div>
+  
+ 
   )
 }
 
