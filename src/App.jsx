@@ -1,14 +1,15 @@
-import Main from "./components/main";
-import logo from '../src/assets/image/ayselogo.png'
+// import Nav from "./components/header"
+import Home from "./pages/home"
+
 function App() {
 
 
   return (
     <>
-      <Main />
+      {/* <Nav /> */}
+      <Home />
 
 
-      
     </>
   )
 }
