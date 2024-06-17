@@ -8,6 +8,7 @@ const nav = () => {
         <li className='animate-fade-in-slide-up' ><a href="">Home</a></li>
         <li className='animate-fade-in-slide-up'><a href="">About</a></li>
         <li className='animate-fade-in-slide-up'><a href="">Skills</a></li>
+        <li className='animate-fade-in-slide-up'><a href="">Experience</a></li>
         <li className='animate-fade-in-slide-up'><a href="">Projects</a></li>
         <li className='animate-fade-in-slide-up'><a href="">Contact</a></li>
       </ul>
