@@ -10,6 +10,14 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 // import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin, faInstagram, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+// import {  faCss3Alt } from '@fortawesome/free-brands-svg-icons';
+// import {  faSass} from '@fortawesome/free-brands-svg-icons';
+// import {  faJs } from '@fortawesome/free-brands-svg-icons';
+// import {  faJquery} from '@fortawesome/free-brands-svg-icons';
+// import {  faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt } from '@fortawesome/free-brands-svg-icons';
+
 
 
 const home = () => {
@@ -23,21 +31,31 @@ const home = () => {
 
         <>
             <Nav />
-            <section id='Home' className='flex items-center justify-start h-50vh mx-14 ' data-aos="fade-right" >
-                <h1 className='text-8xl text-white'>
-                    <span className='text-7xl italic'>hi there, I'm </span> <br />
+            <section id='Home' className='flex flex-col items-center justify-center h-50vh  ' data-aos="fade-right" >
+                <h1 className='text-8xl text-white text-center'>
+                    <span className=' text-7xl  italic leading-snug'>Hi there, I'm </span> <br />
                     Aysel Alakbarova
                 </h1>
+                {/* <p className='text-white text-center leading-snug text-italic'>shine in the world</p> */}
+
             </section>
             <section id='about' className='p-8 bg-black-100 my-36 text-white flex items-center '>
                 <div className='w-9/12 max-w-4xl mx-auto' data-aos="fade-right">
-                    <h2 className='text-4xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>About Me</h2>
+                    <h2 className='text-5xl  font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>About Me</h2>
                     <div className='flex items-center mb-6'>
 
                         <div>
                             <p className='text-lg'>
                                 Hi, I'm <span className='font-bold text-700'>Aysel Alakbarova</span>, a passionate web developer and designer
                                 with a love for creating beautiful and functional web experiences.
+                                {/* <FontAwesomeIcon icon={faHtml5} size="2x" />
+                                <FontAwesomeIcon icon={faCss3Alt} size="2x" />
+                                <FontAwesomeIcon icon={faSass} size="2x" />
+                                <FontAwesomeIcon icon={faJs} size="2x" />
+                                <FontAwesomeIcon icon={faJquery} size="2x" />
+                                <FontAwesomeIcon icon={faReact} size="2x" />
+                                <FontAwesomeIcon icon={faGithub} size="2x" /> */}
+
                             </p>
                         </div>
                     </div>
@@ -68,33 +86,16 @@ const home = () => {
             <section id='skills' className='py-12 my-38 text-white section-animation ' data-aos="fade-up"
                 data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto' >
-                    <h2 className='text-4xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}> <span class="text-3xl font-bold mb-4">01</span>  Skills</h2>
+                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}> <span class="text-4xl font-bold mb-4">01</span>  Skills</h2>
 
                 </div>
-                {/* <div className='max-w-7xl mx-auto'>
 
-                    <div className='grid grid-cols-2 gap-6'>
-                        <div>
-                            <h3 className='text-2xl font-semibold mb-4'>Front-End</h3>
-                            <ul className='list-disc list-inside'>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Scss</li>
-                                <li>Tailwind</li>
-                                <li>JavaScript</li>
-                                <li>Jquery</li>
-                                <li>React</li>
-                             
-                            </ul>
-                        </div>
-                       
-                    </div>
-                </div> */}
                 <div class="bg-black text-white py-36 w-12/12 max-w-7xl mx-auto ">
                     <div class="container mx-auto text-xl">
                         <ul class="flex">
                             <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">HTML</li>
+cursor-pointer">
+                                HTML</li>
                             <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
 cursor-pointer">CSS</li>
                             <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
@@ -108,7 +109,9 @@ cursor-pointer">jQuery</li>
                             <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
 cursor-pointer">React</li>
                             <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">GIT</li>
+cursor-pointer">
+                                <FontAwesomeIcon icon={faGitAlt} size="2x" />
+                                GIT</li>
                             <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
 cursor-pointer">GitHub</li>
                         </ul>
@@ -120,17 +123,17 @@ cursor-pointer">GitHub</li>
 
                 {/* <section id='animated-section' className='py-12 my-38 text-white' data-aos="fade-left">
       <div className='w-12/12 max-w-7xl mx-auto'>
-        <h2 className='text-4xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>Animated Section</h2>
+        <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>Animated Section</h2>
       </div>
 
     </section> */}
 
             </section>
-            <section id="experience"  className='py-12 my-38 text-white section-animation ' data-aos="fade-up"
+            <section id="experience" className='py-12 my-38 text-white section-animation ' data-aos="fade-up"
                 data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto'>
-                    <h2 className='text-4xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
-                        <span className="text-3xl font-bold mb-4">02</span> Experience
+                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
+                        <span className="text-4xl font-bold mb-4">02</span> Experience
                     </h2>
 
                     <div className="bg-black text-white py-8 mb-24 px-4flex flex-col">
@@ -159,8 +162,8 @@ cursor-pointer">GitHub</li>
             </section>
             <section id='projects' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto'>
-                    <h2 className='text-4xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
-                        <span className="text-3xl font-bold mb-4">03</span> Projects
+                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
+                        <span className="text-4xl font-bold mb-4">03</span> Projects
                     </h2>
 
                     <div className="container mx-auto py-24">
@@ -229,8 +232,8 @@ cursor-pointer">GitHub</li>
 
             <section id='contact' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto'>
-                    <h2 className='text-4xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
-                        <span className="text-3xl font-bold mb-4">04</span> Contact
+                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
+                        <span className="text-4xl font-bold mb-4">04</span> Contact
                     </h2>
                     <div className="flex justify-between pt-8 pb-24">
                         <div className='w-6/12 max-w-4xl mx-auto' data-aos="fade-right">
@@ -282,39 +285,7 @@ cursor-pointer">GitHub</li>
             </section>
 
 
-            <footer className="bg-black text-white py-4 w-12/12 max-w-7xl mx-auto">
-                <div className="flex justify-between space-x-4">
-                    <div>&copy; 2024 Aysel Alakbarova</div>
-                    <div className="flex space-x-2">
-                        <div>
-                            <a href="link-to-linkedin" className="text-white hover:text-gray-300">
-                                <FontAwesomeIcon icon={faLinkedin} className="text-500 h-5 w-5" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="link-to-gmail" className="text-white hover:text-gray-300" >
-                                <FontAwesomeIcon icon={faEnvelope} className="text-500 h-5 w-5" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="link-to-instagram" className="text-white hover:text-gray-300">
-                                <FontAwesomeIcon icon={faGithub} className="text-500 h-5 w-5" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="link-to-github" className="text-white hover:text-gray-300">
-                                <FontAwesomeIcon icon={faInstagram} className="text-500 h-5 w-5" />
-                            </a>
-                        </div>
-                        <div>
-                            <a href="link-to-medium" className="text-white hover:text-gray-300">
-                                <FontAwesomeIcon icon={faMedium} className="text-500 h-5 w-5" />
-                            </a>
-                        </div>
-                    </div>
 
-                </div>
-            </footer>
         </>
 
     )
