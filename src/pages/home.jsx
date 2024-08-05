@@ -31,30 +31,25 @@ const home = () => {
 
         <>
             <Nav />
-            <section id='Home' className='flex flex-col items-center justify-center h-50vh  ' data-aos="fade-right" >
-                <h1 className='text-8xl text-white text-center'>
-                    <span className=' text-7xl  italic leading-snug'>Hi there, I'm </span> <br />
-                    Aysel Alakbarova
-                </h1>
-                {/* <p className='text-white text-center leading-snug text-italic'>shine in the world</p> */}
-
+            <section id='Home' className='h-screen bg-[url("src/assets/image/1.jpg")] bg-cover bg-center flex items-center' data-aos="fade-right" >
+                <div className=' flex items-center justify-around h-80vh my-8 w-11/12 mx-auto'>
+                    <h1 className='text-7xl text-white '>
+                        <span className=' text-7xl  italic leading-snug'>Hi there, I'm </span> <br />
+                        Aysel Alakbarova <br />
+                        <button className='h-12 w-32 text-center text-white font-normal text-2xl border border-white-transparent rounded-xl  hover:bg-white hover:text-black transition duration-300 ease-out'>Hire me</button>
+                    </h1>
+                    <img src={AyselImage} data-aos="flip-right" className='w-3/12 max-w-2xl  object-cover rounded-lg shadow-md' alt="" />
+                </div>
             </section>
-            <section id='about' className='p-8 bg-black-100 my-36 text-white flex items-center '>
-                <div className='w-9/12 max-w-4xl mx-auto' data-aos="fade-right">
-                    <h2 className='text-5xl  font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>About Me</h2>
+            <section id='about' className='p-8 bg-black-100  justify-around h-80vh my-8 w-11/12 mx-auto  text-white flex items-start '>
+                <div className=' w-11/12' data-aos="fade-right">
+                    <h2 className='text-5xl  font-medium mb-6 text-left italic text-700  text-custom-red' >About Me</h2>
                     <div className='flex items-center mb-6'>
 
                         <div>
                             <p className='text-lg'>
                                 Hi, I'm <span className='font-bold text-700'>Aysel Alakbarova</span>, a passionate web developer and designer
                                 with a love for creating beautiful and functional web experiences.
-                                {/* <FontAwesomeIcon icon={faHtml5} size="2x" />
-                                <FontAwesomeIcon icon={faCss3Alt} size="2x" />
-                                <FontAwesomeIcon icon={faSass} size="2x" />
-                                <FontAwesomeIcon icon={faJs} size="2x" />
-                                <FontAwesomeIcon icon={faJquery} size="2x" />
-                                <FontAwesomeIcon icon={faReact} size="2x" />
-                                <FontAwesomeIcon icon={faGithub} size="2x" /> */}
 
                             </p>
                         </div>
@@ -81,68 +76,46 @@ const home = () => {
                     </div>
 
                 </div>
-                <img src={AyselImage} data-aos="flip-right" className='w-3/12 max-w-4xl mx-auto object-cover rounded-lg shadow-md' alt="" />
+
             </section>
             <section id='skills' className='py-12 my-38 text-white section-animation ' data-aos="fade-up"
                 data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto' >
-                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}> <span class="text-4xl font-bold mb-4">01</span>  Skills</h2>
+                    <div className='flex items-center'>
+                        <span class="text-4xl font-bold mb-4  text-custom-red">01</span >    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text mx-3 ' style={{ color: '#FFD700' }}>   Skills</h2>
+                    </div>
 
                 </div>
 
-                <div class="bg-black text-white py-36 w-12/12 max-w-7xl mx-auto ">
-                    <div class="container mx-auto text-xl">
-                        <ul class="flex">
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">
-                                HTML</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">CSS</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">SCSS</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">Tailwind CSS</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">JavaScript</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">jQuery</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">React</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">
-                                <FontAwesomeIcon icon={faGitAlt} size="2x" />
-                                GIT</li>
-                            <li class="mb-2 p-6 bg-black border border-black border-white hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 
-cursor-pointer">GitHub</li>
+                <div class="bg-black text-white pb-14 w-full max-w-7xl mx-auto px-4">
+                    <div class="text-xl">
+                        <ul class="grid grid-cols-4 gap-2 p-4">
+                            {webTechnologies.technologies.map(item => (
+                                <li class="mb-4 p-6 text-center bg-customGray border shadow-custom hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5 cursor-pointer w-56 h-64 rounded-3xl flex flex-col items-center justify-center">
+                                    <img src={item.img} alt="" />
+                                    <span className='font-normal text-2xl'>{item.name}</span>
+                                </li>
+                            ))}
                         </ul>
-
-
-
                     </div>
                 </div>
 
-                {/* <section id='animated-section' className='py-12 my-38 text-white' data-aos="fade-left">
-      <div className='w-12/12 max-w-7xl mx-auto'>
-        <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>Animated Section</h2>
-      </div>
-
-    </section> */}
+          
 
             </section>
             <section id="experience" className='py-12 my-38 text-white section-animation ' data-aos="fade-up"
                 data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto'>
-                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
-                        <span className="text-4xl font-bold mb-4">02</span> Experience
-                    </h2>
-
+                <div className='flex items-center'>
+                        <span class="text-4xl font-bold mb-4  text-custom-red">01</span >    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text mx-3 ' style={{ color: '#FFD700' }}>   Experience</h2>
+                    </div>
                     <div className="bg-black text-white py-8 mb-24 px-4flex flex-col">
                         <div className="mb-4">
                             <span className="text-lg font-bold">WeWork</span>
                             <span className="text-sm ml-2">Full-time - 3 yrs 2 mos</span>
                         </div>
                         <div className="flex items-center mb-4">
-                            <div className="w-4 h-4 bg-gray-500 rounded-full mr-2"></div>
+                            <div className="w-4 h-4 bg-custom-red rounded-full mr-2"></div>
                             <h2 className="text-xl font-bold">Senior Marketing Manager</h2>
                         </div>
                         <p className="text-sm mb-2">Jul 2020 - Aug 2022 · 2 yrs 2 mos</p>
@@ -150,7 +123,7 @@ cursor-pointer">GitHub</li>
                             Built, executed, and optimized all lead nurturing programs for ESP providers using our pre-built HTML.
                         </p>
                         <div className="flex items-center mt-4">
-                            <div className="w-4 h-4 bg-gray-500 rounded-full mr-2"></div>
+                            <div className="w-4 h-4 bg-custom-red rounded-full mr-2"></div>
                             <h2 className="text-lg font-bold">Marketing Manager</h2>
                         </div>
                         <p className="text-sm mb-2">Jul 2019 - Jul 2020 · 1 yr 1 mo</p>
@@ -229,7 +202,6 @@ cursor-pointer">GitHub</li>
                     </div>
                 </div>
             </section>
-
             <section id='contact' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto'>
                     <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
@@ -292,3 +264,48 @@ cursor-pointer">GitHub</li>
 }
 
 export default home
+
+const webTechnologies = {
+    technologies: [
+        {
+            name: "HTML",
+            img: "src/assets/skillsImg/HTML.svg",
+            size: "129x129"
+        },
+        {
+            name: "CSS",
+            img: "src/assets/skillsImg/css.svg",
+            size: "129x129"
+        },
+        {
+            name: "SCSS",
+            img: "src/assets/skillsImg/scss.svg",
+            size: "129x129"
+        },
+        {
+            name: "Tailwind CSS",
+            img: "src/assets/skillsImg/tailwind.svg",
+            size: "129x129"
+        },
+        {
+            name: "JavaScript",
+            img: "src/assets/skillsImg/javascript.svg",
+            size: "129x129"
+        },
+        {
+            name: "jQuery",
+            img: "src/assets/skillsImg/jquery.svg",
+            size: "129x129"
+        },
+        {
+            name: "GIT",
+            img: "src/assets/skillsImg/git.svg",
+            size: "129x129"
+        },
+        {
+            name: "GitHub",
+            img: "src/assets/skillsImg/github.svg",
+            size: "129x129"
+        }
+    ]
+};

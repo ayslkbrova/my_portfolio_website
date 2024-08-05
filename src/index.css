@@ -17,28 +17,31 @@ body{
   padding-bottom: 20px; 
  
 }
-
-/* Alt çizgiyi tanımlama */
 .section-animation::after {
-  content: ''; /* Pseudo elementi içeriği */
-  position: absolute; /* Konumlandırma */
-  bottom: 50px; /* Altta */
-  left: 50px; /* Solda */
+  content: ''; 
+  position: absolute; 
+  bottom: 50px;
+  left: 50px; 
   margin: 0 auto;
-  width: 0; /* Başlangıçta genişlik sıfır olacak */
-  height: 1px; /* Yükseklik (çizgi kalınlığı) */
-  background-color: white; /* Çizgi rengi */
-  transition: width 0.5s ease; /* Geçiş efekti */
+  width: 0; 
+  height: 1px; 
+  background-color: white; 
+  transition: width 0.5s ease;
 }
 
 /* Çizgi animasyonu */
 @keyframes drawLine {
   to {
-    width: calc(100% - 100px); /* 100% genişlik */
+    width: calc(100% - 100px); 
   }
 }
 
-/* Çizgi animasyonunu çalıştırma */
+
 .section-animation::after {
-  animation: drawLine 1s forwards; /* Animasyonu çalıştırma */
+  animation: drawLine 1s forwards; 
+}
+{
+  
+  box-shadow: 0px 4px 22.1px 0px #FFFAFA40;
+
 }
