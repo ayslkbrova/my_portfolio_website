@@ -100,14 +100,14 @@ const home = () => {
                     </div>
                 </div>
 
-          
+
 
             </section>
             <section id="experience" className='py-12 my-38 text-white section-animation ' data-aos="fade-up"
                 data-aos-duration="5000">
                 <div className='w-12/12 max-w-7xl mx-auto'>
-                <div className='flex items-center'>
-                        <span class="text-4xl font-bold mb-4  text-custom-red">01</span >    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text mx-3 ' style={{ color: '#FFD700' }}>   Experience</h2>
+                    <div className='flex items-center'>
+                        <span class="text-4xl font-bold mb-4  text-custom-red">02</span >    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text mx-3 ' style={{ color: '#FFD700' }}>   Experience</h2>
                     </div>
                     <div className="bg-black text-white py-8 mb-24 px-4flex flex-col">
                         <div className="mb-4">
@@ -116,17 +116,26 @@ const home = () => {
                         </div>
                         <div className="flex items-center mb-4">
                             <div className="w-4 h-4 bg-custom-red rounded-full mr-2"></div>
-                            <h2 className="text-xl font-bold">Senior Marketing Manager</h2>
+                            <h2 className="text-xl font-bold">Junior Frontend developer</h2>
                         </div>
-                        <p className="text-sm mb-2">Jul 2020 - Aug 2022 · 2 yrs 2 mos</p>
+                        <p className="text-sm mb-2">June 2024  · Present</p>
                         <p className="text-sm">
                             Built, executed, and optimized all lead nurturing programs for ESP providers using our pre-built HTML.
                         </p>
                         <div className="flex items-center mt-4">
                             <div className="w-4 h-4 bg-custom-red rounded-full mr-2"></div>
-                            <h2 className="text-lg font-bold">Marketing Manager</h2>
+                            <h2 className="text-lg font-bold">IKT Club UNEC intern
+                            </h2>
                         </div>
-                        <p className="text-sm mb-2">Jul 2019 - Jul 2020 · 1 yr 1 mo</p>
+                        <p className="text-sm mb-2">Dec 2023 - May 2024 · 6 mo</p>
+                        <p className="text-sm">
+                            Boosted brand awareness by 25% and led the development of a new marketing strategy.
+                        </p>
+                        <div className="flex items-center mt-4">
+                            <div className="w-4 h-4 bg-custom-red rounded-full mr-2"></div>
+                            <h2 className="text-lg font-bold">Frontend courses</h2>
+                        </div>
+                        <p className="text-sm mb-2">Sep 2023 - Dec 2023 · 4 mo</p>
                         <p className="text-sm">
                             Boosted brand awareness by 25% and led the development of a new marketing strategy.
                         </p>
@@ -134,27 +143,208 @@ const home = () => {
                 </div>
             </section>
             <section id='projects' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
-                <div className='w-12/12 max-w-7xl mx-auto'>
-                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
-                        <span className="text-4xl font-bold mb-4">03</span> Projects
-                    </h2>
-
-                    <div className="container mx-auto py-24">
-                        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            <div className=" border-white p-8 rounded-lg shadow-lg border border-transparent hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5">
-                                <div className="flex justify-between items-center">
-                                    <h3 className="text-2xl font-semibold text-white">My Portfolio</h3>
-                                    <div className="flex space-x-4">
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faGithub} />
-                                        </a>
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                        </a>
+                <div className='w-full max-w-7xl mx-auto px-4'>
+                    <div className='flex items-center mb-8'>
+                        <span className="text-4xl font-bold mb-4 text-custom-red">03</span>
+                        <h2 className='text-5xl font-medium mb-6 text-left italic gradient-text mx-3' style={{ color: '#FFD700' }}>
+                            Projects
+                        </h2>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 my-16 gap-6">
+                        {projects.map((project, index) => (
+                            <div
+                                key={index}
+                                className="relative border-white p-6 rounded-lg shadow-lg border border-transparent text-white transition-transform duration-400 transform hover:translate-y-4 hover:scale-105 hover:shadow-2xl hover:bg-gray-800"
+                                style={{
+                                    backgroundColor: '#1a1a1a', // Koyu gri arka plan
+                                }}
+                            >
+                                <div className="flex flex-col h-full justify-between">
+                                    <div className="flex justify-between items-center mb-4">
+                                        <h3 className="text-xl font-semibold text-white">{project.name}</h3>
+                                        <div className="flex space-x-4">
+                                            <a href={project.github} className="text-gray-300 hover:text-white text-xl">
+                                                <FontAwesomeIcon icon={faGithub} />
+                                            </a>
+                                            <a href={project.externalLink} className="text-gray-300 hover:text-white text-xl">
+                                                <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                            </a>
+                                        </div>
                                     </div>
+                                    <p className="text-lg mb-4">{project.stack}</p>
+                                    <p className="text-sm text-gray-400">{project.description}</p>
                                 </div>
-                                <p className="mt-4 text-lg">Vite+ React, Tailwind CSS</p>
                             </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id='contact' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
+                <div className='w-12/12 max-w-7xl mx-auto'>
+                    <div className='flex items-center'>
+                        <span class="text-4xl font-bold mb-4  text-custom-red">04</span >    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text mx-3 ' style={{ color: '#FFD700' }}>  Contact</h2>
+                    </div>
+                    <div className="flex justify-between pt-8 pb-24">
+                        <div className='w-6/12 max-w-4xl mx-auto' data-aos="fade-right">
+
+                            <div className='space-y-4 text-xl'>
+                                <p>
+                                    Embark on a visual journey through my creative realm, where innovation meets imagination.
+                                </p>
+                                <p>
+                                    With a keen eye for detail and a passion for design, I showcase my finest work and achievements.
+                                </p>
+                                <p>
+                                    Dive into a world where each project tells a story of dedication, skill, and boundless creativity.
+                                </p>
+                                <p>
+                                    <span className='font-bold text-700 underline'>Join me</span>  in exploring the limitless possibilities of visual expression and craftsmanship, on this coding journey as we bring innovation and creativity to life in the digital world
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div className='w-6/12 max-w-4xl mx-auto' data-aos="fade-right">
+                            <div className="bg-black w-4/5 sm:w-5/5 rounded-lg mx-auto ">
+                                <form className="space-y-5">
+                                    <label htmlFor="name" className="block text-white text-sm font-medium">Name</label>
+                                    <input
+                                        type="text"
+                                        placeholder="John Doe"
+
+                                        className="w-full bg-black  text-white border-b-2 border-white outline-none"
+                                    />
+                                    <label htmlFor="name" className="block text-white text-sm font-medium">Email</label>
+                                    <input
+                                        type="email"
+                                        placeholder="john.doe@example.com"
+                                        className="w-full bg-black text-white border-b-2 border-white outline-none"
+                                    />
+                                    <label htmlFor="name" className="block text-white text-sm font-medium">Message</label>
+                                    <textarea
+                                        placeholder="What can we help you with?"
+                                        className="w-full h-32 bg-black text-white border-b-2 border-white outline-none"
+                                    />
+                                    <button
+                                        className="w-full bg-white text-black py-2 rounded-md hover:bg-gray-200"
+                                    >
+                                        Contact me
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </>
+
+    )
+}
+
+export default home
+
+export const webTechnologies = {
+    technologies: [
+        {
+            name: "HTML",
+            img: "src/assets/skillsImg/HTML.svg",
+            size: "129x129"
+        },
+        {
+            name: "CSS",
+            img: "src/assets/skillsImg/css.svg",
+            size: "129x129"
+        },
+        {
+            name: "SCSS",
+            img: "src/assets/skillsImg/scss.svg",
+            size: "129x129"
+        },
+        {
+            name: "Tailwind CSS",
+            img: "src/assets/skillsImg/tailwind.svg",
+            size: "129x129"
+        },
+        {
+            name: "JavaScript",
+            img: "src/assets/skillsImg/javascript.svg",
+            size: "129x129"
+        },
+        {
+            name: "jQuery",
+            img: "src/assets/skillsImg/jquery.svg",
+            size: "129x129"
+        },
+        {
+            name: "GIT",
+            img: "src/assets/skillsImg/git.svg",
+            size: "129x129"
+        },
+        {
+            name: "GitHub",
+            img: "src/assets/skillsImg/github.svg",
+            size: "129x129"
+        }
+    ]
+};
+
+const projects = [
+    {
+        "name": "My Portfolio",
+        "stack": "Vite + React, Tailwind CSS",
+        "description": "A personal portfolio showcasing my projects and skills.",
+        "github": "#",
+        "externalLink": "#"
+    },
+    {
+        "name": "TEC",
+        "stack": "Html, Scss, JavaScript",
+        "description": "A project developed using HTML, SCSS, and JavaScript for dynamic content.",
+        "github": "#",
+        "externalLink": "#"
+    },
+    {
+        "name": "Spark Academy",
+        "stack": "Html, Css, JavaScript",
+        "description": "An educational platform built with HTML, CSS, and JavaScript.",
+        "github": "#",
+        "externalLink": "#"
+    },
+    {
+        "name": "EduFord",
+        "stack": "Html, Css, JavaScript",
+        "description": "A modern web application developed using HTML, CSS, and JavaScript.",
+        "github": "#",
+        "externalLink": "#"
+    },
+];
+
+
+
+
+{/* <div className="container mx-auto py-24">
+                        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            {projects.map((project, index) => (
+                                <div key={index} className="border-white p-8 rounded-lg shadow-lg border border-transparent hover:border-white text-white transition-all duration-300 transform hover:-translate-x-5">
+                                    <div className="flex justify-between items-center">
+                                        <h3 className="text-2xl font-semibold text-white">{project.name}</h3>
+                                        <div className="flex space-x-4">
+                                            <a href={project.github} className="text-gray-400 hover:text-gray-300 text-xl">
+                                                <FontAwesomeIcon icon={faGithub} />
+                                            </a>
+                                            <a href={project.externalLink} className="text-gray-400 hover:text-gray-300 text-xl">
+                                                <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p className="mt-4 text-lg">{project.stack}</p>
+                                </div>
+                            ))}
+                            
                             <div className=" border-white p-8 rounded-lg shadow-lg border border-transparent hover:border-white text-white transition-all duration-300 transform hover:-translate-x-5">
                                 <div className="flex justify-between items-center">
                                     <h3 className="text-2xl font-semibold text-white">TEC</h3>
@@ -199,113 +389,4 @@ const home = () => {
                                 <p className="mt-4 text-lg">Html, Css, JavaScript</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section id='contact' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
-                <div className='w-12/12 max-w-7xl mx-auto'>
-                    <h2 className='text-5xl font-medium mb-6 text-left italic text-700 gradient-text' style={{ color: '#FFD700' }}>
-                        <span className="text-4xl font-bold mb-4">04</span> Contact
-                    </h2>
-                    <div className="flex justify-between pt-8 pb-24">
-                        <div className='w-6/12 max-w-4xl mx-auto' data-aos="fade-right">
-
-                            <div className='space-y-4 text-xl'>
-                                <p>
-                                    Embark on a visual journey through my creative realm, where innovation meets imagination.
-                                </p>
-                                <p>
-                                    With a keen eye for detail and a passion for design, I showcase my finest work and achievements.
-                                </p>
-                                <p>
-                                    Dive into a world where each project tells a story of dedication, skill, and boundless creativity.
-                                </p>
-                                <p>
-                                    <span className='font-bold text-700 underline'>Join me</span>  in exploring the limitless possibilities of visual expression and craftsmanship, on this coding journey as we bring innovation and creativity to life in the digital world
-                                </p>
-                            </div>
-
-                        </div>
-
-                        <div className='w-6/12 max-w-4xl mx-auto' data-aos="fade-right">
-                            <div className="bg-black w-4/5 sm:w-5/5 rounded-lg mx-auto ">
-                                <form className="space-y-6">
-                                    <input
-                                        type="text"
-                                        placeholder="Your name"
-                                        className="w-full bg-black text-white border-b-2 border-white outline-none"
-                                    />
-                                    <input
-                                        type="email"
-                                        placeholder="Your email here"
-                                        className="w-full bg-black text-white border-b-2 border-white outline-none"
-                                    />
-                                    <textarea
-                                        placeholder="Message"
-                                        className="w-full h-32 bg-black text-white border-b-2 border-white outline-none"
-                                    />
-                                    <button
-                                        className="w-full bg-white text-black py-2 rounded-md hover:bg-gray-200"
-                                    >
-                                        Contact me
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-        </>
-
-    )
-}
-
-export default home
-
-const webTechnologies = {
-    technologies: [
-        {
-            name: "HTML",
-            img: "src/assets/skillsImg/HTML.svg",
-            size: "129x129"
-        },
-        {
-            name: "CSS",
-            img: "src/assets/skillsImg/css.svg",
-            size: "129x129"
-        },
-        {
-            name: "SCSS",
-            img: "src/assets/skillsImg/scss.svg",
-            size: "129x129"
-        },
-        {
-            name: "Tailwind CSS",
-            img: "src/assets/skillsImg/tailwind.svg",
-            size: "129x129"
-        },
-        {
-            name: "JavaScript",
-            img: "src/assets/skillsImg/javascript.svg",
-            size: "129x129"
-        },
-        {
-            name: "jQuery",
-            img: "src/assets/skillsImg/jquery.svg",
-            size: "129x129"
-        },
-        {
-            name: "GIT",
-            img: "src/assets/skillsImg/git.svg",
-            size: "129x129"
-        },
-        {
-            name: "GitHub",
-            img: "src/assets/skillsImg/github.svg",
-            size: "129x129"
-        }
-    ]
-};
+                    </div> */}

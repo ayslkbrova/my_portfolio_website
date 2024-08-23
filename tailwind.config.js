@@ -24,6 +24,9 @@ export default {
       height: {
         '50vh': '50vh',
       },
+      transitionDuration: {
+        '400': '400ms', 
+      },
     },
   },
   plugins: [],
