@@ -39,18 +39,21 @@ const home = () => {
 
         <>
             <Nav />
-            <section id='Home' className='h-screen bg-[url("src/assets/image/1.jpg")] bg-cover bg-center flex items-center' data-aos="fade-right" >
-                <div className='flex flex-col-reverse md:flex-row items-center justify-around h-full w-11/12 mx-auto'>
-                    <h1 className='text-4xl sm:text-5xl md:text-7xl text-white text-center md:text-left'>
-                        <span className='text-3xl sm:text-4xl md:text-7xl italic leading-snug block md:inline'>Hi there, I'm</span><br />
-                        Aysel Alakbarova<br />
-                        <button className='mt-4 h-12 w-40 text-center text-white font-normal text-xl sm:text-2xl border border-white-transparent rounded-xl hover:bg-white hover:text-black transition duration-300 ease-out'>
-                            Hire me
-                        </button>
-                    </h1>
-                    <img src={AyselImage} data-aos="flip-right" className='w-8/12 sm:w-6/12 md:w-3/12 max-w-2xl object-cover rounded-lg shadow-md mb-6 md:mb-0' alt="" />
-                </div>
-            </section>
+            <section id='Home' className='h-screen bg-[url("src/assets/image/1.jpg")] bg-cover bg-center flex items-center' data-aos="fade-right">
+    <div className='flex flex-col-reverse md:flex-row items-center justify-evenly h-full w-11/12 mx-auto'>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white text-center md:text-left'>
+            <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug block md:inline'>
+                Hi there, I'm
+            </span><br />
+            Aysel Alakbarova<br />
+            <button className='mt-4 h-12 w-40 text-center text-white font-normal text-xl sm:text-2xl border border-white-transparent rounded-xl hover:bg-white hover:text-black transition duration-300 ease-out'>
+                Hire me
+            </button>
+        </h1>
+        <img src={AyselImage} data-aos="flip-right" className='w-8/12 sm:w-7/12 md:w-5/12 lg:w-4/12 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl object-cover rounded-lg shadow-md mb-6 md:mb-0' alt="Aysel Alakbarova" />
+    </div>
+</section>
+
 
             <section id='about' className='p-4 bg-black-100 justify-around my-8 w-full mx-auto text-white flex flex-col items-center sm:p-8 sm:h-80vh sm:flex-row sm:w-11/12'>
                 <div className='w-full sm:w-11/12' data-aos="fade-right">

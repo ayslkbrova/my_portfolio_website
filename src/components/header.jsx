@@ -57,7 +57,7 @@ const Nav = () => {
           className={`fixed top-0 left-0 w-full h-full bg-[#141414] shadow-lg z-40 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}
         >
           <div className="flex justify-between px-2 z-50">
-            <img src={logo} className="w-28 z-50" alt="Logo" />
+          <img src={logo} className="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36" alt="Logo" />
             <button
               onClick={toggleMenu}
               className="text-3xl text-white focus:outline-none"
