@@ -40,3 +40,18 @@ body{
 .section-animation::after {
   animation: drawLine 1s forwards; 
 }
+body,html{
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DE4C36;
+  border-radius: 10px;
+}
