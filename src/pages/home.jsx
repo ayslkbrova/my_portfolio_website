@@ -7,6 +7,14 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import HTMLIcon from '../assets/skillsImg/HTML.svg';
+import CSSIcon from '../assets/skillsImg/css.svg';
+import SCSSIcon from '../assets/skillsImg/scss.svg';
+import TailwindIcon from '../assets/skillsImg/tailwind.svg';
+import JavaScriptIcon from '../assets/skillsImg/javascript.svg';
+import jQueryIcon from '../assets/skillsImg/jquery.svg';
+import GitIcon from '../assets/skillsImg/git.svg';
+import GitHubIcon from '../assets/skillsImg/github.svg';
 // import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin, faInstagram, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -32,17 +40,17 @@ const home = () => {
         <>
             <Nav />
             <section id='Home' className='h-screen bg-[url("src/assets/image/1.jpg")] bg-cover bg-center flex items-center' data-aos="fade-right" >
-    <div className='flex flex-col-reverse md:flex-row items-center justify-around h-full w-11/12 mx-auto'>
-        <h1 className='text-4xl sm:text-5xl md:text-7xl text-white text-center md:text-left'>
-            <span className='text-3xl sm:text-4xl md:text-7xl italic leading-snug block md:inline'>Hi there, I'm</span><br />
-            Aysel Alakbarova<br />
-            <button className='mt-4 h-12 w-40 text-center text-white font-normal text-xl sm:text-2xl border border-white-transparent rounded-xl hover:bg-white hover:text-black transition duration-300 ease-out'>
-                Hire me
-            </button>
-        </h1>
-        <img src={AyselImage} data-aos="flip-right" className='w-8/12 sm:w-6/12 md:w-3/12 max-w-2xl object-cover rounded-lg shadow-md mb-6 md:mb-0' alt="" />
-    </div>
-</section>
+                <div className='flex flex-col-reverse md:flex-row items-center justify-around h-full w-11/12 mx-auto'>
+                    <h1 className='text-4xl sm:text-5xl md:text-7xl text-white text-center md:text-left'>
+                        <span className='text-3xl sm:text-4xl md:text-7xl italic leading-snug block md:inline'>Hi there, I'm</span><br />
+                        Aysel Alakbarova<br />
+                        <button className='mt-4 h-12 w-40 text-center text-white font-normal text-xl sm:text-2xl border border-white-transparent rounded-xl hover:bg-white hover:text-black transition duration-300 ease-out'>
+                            Hire me
+                        </button>
+                    </h1>
+                    <img src={AyselImage} data-aos="flip-right" className='w-8/12 sm:w-6/12 md:w-3/12 max-w-2xl object-cover rounded-lg shadow-md mb-6 md:mb-0' alt="" />
+                </div>
+            </section>
 
             <section id='about' className='p-4 bg-black-100 justify-around my-8 w-full mx-auto text-white flex flex-col items-center sm:p-8 sm:h-80vh sm:flex-row sm:w-11/12'>
                 <div className='w-full sm:w-11/12' data-aos="fade-right">
@@ -81,47 +89,47 @@ const home = () => {
             </section>
 
             <section
-  id="skills"
-  className="py-12 my-20 text-white section-animation"
-  data-aos="fade-up"
-  data-aos-duration="5000"
->
-  <div className="w-full max-w-7xl mx-auto px-4">
-    <div className="flex flex-col items-center sm:flex-row sm:items-center">
-      <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">
-        01
-      </span>
-      <h2
-        className="text-4xl font-medium mb-4 text-center italic text-700 gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6"
-        style={{ color: "#FFD700" }}
-      >
-        Skills
-      </h2>
-    </div>
-  </div>
+                id="skills"
+                className="py-12 my-20 text-white section-animation"
+                data-aos="fade-up"
+                data-aos-duration="5000"
+            >
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="flex flex-col items-center sm:flex-row sm:items-center">
+                        <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">
+                            01
+                        </span>
+                        <h2
+                            className="text-4xl font-medium mb-4 text-center italic text-700 gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6"
+                            style={{ color: "#FFD700" }}
+                        >
+                            Skills
+                        </h2>
+                    </div>
+                </div>
 
-  <div className="bg-black text-white pb-10 w-full max-w-7xl mx-auto px-4">
-    <div className="text-lg sm:text-xl">
-      <ul className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 lg:grid-cols-4 sm:gap-6">
-        {webTechnologies.technologies.map((item) => (
-          <li
-            key={item.name}
-            className="mb-4 p-4 text-center bg-customGray border shadow-custom hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer rounded-3xl flex flex-col items-center justify-center"
-          >
-            <img
-              src={item.img}
-              alt={item.name}
-              className="w-16 h-16 mb-4 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
-            />
-            <span className="font-normal text-xl sm:text-2xl">
-              {item.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-</section>
+                <div className="bg-black text-white pb-10 w-full max-w-7xl mx-auto px-4">
+                    <div className="text-lg sm:text-xl">
+                        <ul className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 lg:grid-cols-4 sm:gap-6">
+                            {webTechnologies.technologies.map((item) => (
+                                <li
+                                    key={item.name}
+                                    className="mb-4 p-4 text-center bg-customGray border shadow-custom hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer rounded-3xl flex flex-col items-center justify-center"
+                                >
+                                    <img
+                                        src={item.img}
+                                        alt={item.name}
+                                        className="w-16 h-16 mb-4 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
+                                    />
+                                    <span className="font-normal text-xl sm:text-2xl">
+                                        {item.name}
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
 
             <section id="experience" className='py-12 my-20 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
@@ -211,56 +219,56 @@ const home = () => {
             </section>
 
             <section id='contact' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
-    <div className='w-full max-w-7xl mx-auto'>
-        <div className='flex flex-col items-center mb-8 sm:flex-row sm:items-center'>
-            <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">04</span>
-            <h2 className='text-4xl font-medium mb-4 text-center italic gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' style={{ color: '#FFD700' }}>
-                Contact
-            </h2>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-between pt-8 pb-24 space-y-8 lg:space-y-0">
-            <div className='w-full lg:w-1/2 max-w-4xl mx-auto' data-aos="fade-right">
-                <div className='space-y-4 text-lg sm:text-xl'>
-                    <p>Embark on a visual journey through my creative realm, where innovation meets imagination.</p>
-                    <p>With a keen eye for detail and a passion for design, I showcase my finest work and achievements.</p>
-                    <p>Dive into a world where each project tells a story of dedication, skill, and boundless creativity.</p>
-                    <p>
-                        <span className='font-bold text-700 underline'>Join me</span> in exploring the limitless possibilities of visual expression and craftsmanship, on this coding journey as we bring innovation and creativity to life in the digital world.
-                    </p>
-                </div>
-            </div>
+                <div className='w-full max-w-7xl mx-auto'>
+                    <div className='flex flex-col items-center mb-8 sm:flex-row sm:items-center'>
+                        <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">04</span>
+                        <h2 className='text-4xl font-medium mb-4 text-center italic gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' style={{ color: '#FFD700' }}>
+                            Contact
+                        </h2>
+                    </div>
+                    <div className="flex flex-col lg:flex-row justify-between pt-8 pb-24 space-y-8 lg:space-y-0">
+                        <div className='w-full lg:w-1/2 max-w-4xl mx-auto' data-aos="fade-right">
+                            <div className='space-y-4 text-lg sm:text-xl'>
+                                <p>Embark on a visual journey through my creative realm, where innovation meets imagination.</p>
+                                <p>With a keen eye for detail and a passion for design, I showcase my finest work and achievements.</p>
+                                <p>Dive into a world where each project tells a story of dedication, skill, and boundless creativity.</p>
+                                <p>
+                                    <span className='font-bold text-700 underline'>Join me</span> in exploring the limitless possibilities of visual expression and craftsmanship, on this coding journey as we bring innovation and creativity to life in the digital world.
+                                </p>
+                            </div>
+                        </div>
 
-            <div className='w-full lg:w-1/2 max-w-4xl mx-auto' data-aos="fade-right">
-                <div className="bg-black w-full sm:w-5/5 rounded-lg mx-auto p-6">
-                    <form className="space-y-5">
-                        <label htmlFor="name" className="block text-white text-sm font-medium">Name</label>
-                        <input
-                            type="text"
-                            placeholder="John Doe"
-                            className="w-full bg-black text-white border-b-2 border-white outline-none py-2"
-                        />
-                        <label htmlFor="email" className="block text-white text-sm font-medium">Email</label>
-                        <input
-                            type="email"
-                            placeholder="john.doe@example.com"
-                            className="w-full bg-black text-white border-b-2 border-white outline-none py-2"
-                        />
-                        <label htmlFor="message" className="block text-white text-sm font-medium">Message</label>
-                        <textarea
-                            placeholder="What can we help you with?"
-                            className="w-full h-32 bg-black text-white border-b-2 border-white outline-none py-2"
-                        />
-                        <button
-                            className="w-full bg-white text-black py-2 rounded-md hover:bg-gray-200"
-                        >
-                            Contact me
-                        </button>
-                    </form>
+                        <div className='w-full lg:w-1/2 max-w-4xl mx-auto' data-aos="fade-right">
+                            <div className="bg-black w-full sm:w-5/5 rounded-lg mx-auto p-6">
+                                <form className="space-y-5">
+                                    <label htmlFor="name" className="block text-white text-sm font-medium">Name</label>
+                                    <input
+                                        type="text"
+                                        placeholder="John Doe"
+                                        className="w-full bg-black text-white border-b-2 border-white outline-none py-2"
+                                    />
+                                    <label htmlFor="email" className="block text-white text-sm font-medium">Email</label>
+                                    <input
+                                        type="email"
+                                        placeholder="john.doe@example.com"
+                                        className="w-full bg-black text-white border-b-2 border-white outline-none py-2"
+                                    />
+                                    <label htmlFor="message" className="block text-white text-sm font-medium">Message</label>
+                                    <textarea
+                                        placeholder="What can we help you with?"
+                                        className="w-full h-32 bg-black text-white border-b-2 border-white outline-none py-2"
+                                    />
+                                    <button
+                                        className="w-full bg-white text-black py-2 rounded-md hover:bg-gray-200"
+                                    >
+                                        Contact me
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
 
 
@@ -276,42 +284,42 @@ export const webTechnologies = {
     technologies: [
         {
             name: "HTML",
-            img: "src/assets/skillsImg/HTML.svg",
+            img: HTMLIcon,
             size: "129x129"
         },
         {
             name: "CSS",
-            img: "src/assets/skillsImg/css.svg",
+            img: CSSIcon,
             size: "129x129"
         },
         {
             name: "SCSS",
-            img: "src/assets/skillsImg/scss.svg",
+            img: SCSSIcon,
             size: "129x129"
         },
         {
             name: "Tailwind CSS",
-            img: "src/assets/skillsImg/tailwind.svg",
+            img: TailwindIcon,
             size: "129x129"
         },
         {
             name: "JavaScript",
-            img: "src/assets/skillsImg/javascript.svg",
+            img: JavaScriptIcon,
             size: "129x129"
         },
         {
             name: "jQuery",
-            img: "src/assets/skillsImg/jquery.svg",
+            img: jQueryIcon,
             size: "129x129"
         },
         {
             name: "GIT",
-            img: "src/assets/skillsImg/git.svg",
+            img: GitIcon,
             size: "129x129"
         },
         {
             name: "GitHub",
-            img: "src/assets/skillsImg/github.svg",
+            img: GitHubIcon,
             size: "129x129"
         }
     ]
@@ -351,67 +359,4 @@ const projects = [
 
 
 
-{/* <div className="container mx-auto py-24">
-                        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {projects.map((project, index) => (
-                                <div key={index} className="border-white p-8 rounded-lg shadow-lg border border-transparent hover:border-white text-white transition-all duration-300 transform hover:-translate-x-5">
-                                    <div className="flex justify-between items-center">
-                                        <h3 className="text-2xl font-semibold text-white">{project.name}</h3>
-                                        <div className="flex space-x-4">
-                                            <a href={project.github} className="text-gray-400 hover:text-gray-300 text-xl">
-                                                <FontAwesomeIcon icon={faGithub} />
-                                            </a>
-                                            <a href={project.externalLink} className="text-gray-400 hover:text-gray-300 text-xl">
-                                                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <p className="mt-4 text-lg">{project.stack}</p>
-                                </div>
-                            ))}
-                            
-                            <div className=" border-white p-8 rounded-lg shadow-lg border border-transparent hover:border-white text-white transition-all duration-300 transform hover:-translate-x-5">
-                                <div className="flex justify-between items-center">
-                                    <h3 className="text-2xl font-semibold text-white">TEC</h3>
-                                    <div className="flex space-x-4">
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faGithub} />
-                                        </a>
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                        </a>
-                                    </div>
-                                </div>
-                                <p className="mt-4 text-lg">Html, Scss, JavaScript</p>
 
-                            </div>
-                            <div className=" border-white p-8 rounded-lg shadow-lg border border-transparent hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-5">
-                                <div className="flex justify-between items-center">
-                                    <h3 className="text-2xl font-semibold text-white">SparkAcademy </h3>
-                                    <div className="flex space-x-4">
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faGithub} />
-                                        </a>
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                        </a>
-                                    </div>
-                                </div>
-                                <p className="mt-4 text-lg">Html, Css, JavaScript</p>
-                            </div>
-                            <div className=" border-white p-8 rounded-lg shadow-lg border  hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-x-5">
-                                <div className="flex justify-between items-center">
-                                    <h3 className="text-2xl font-semibold text-white">EduFord</h3>
-                                    <div className="flex space-x-4">
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faGithub} />
-                                        </a>
-                                        <a href="#" className="text-gray-400 hover:text-gray-300 text-xl">
-                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                        </a>
-                                    </div>
-                                </div>
-                                <p className="mt-4 text-lg">Html, Css, JavaScript</p>
-                            </div>
-                        </div>
-                    </div> */}
