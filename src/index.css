@@ -6,12 +6,19 @@ body{
   font-family: "Montserrat", sans-serif;
   background-color: #000;
 }
+.dark body{
+  background-color: #fff;
+}
 .gradient-text {
   background: linear-gradient(90deg, #fff, #ccc); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
 }
-
+.dark .gradient-text {
+  background: linear-gradient(90deg, #fff, #ccc); /* Gradient stillerini koyu modda da koruyun */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000; /* Koyu modda metin rengini siyah yapın */
+}
 .section-animation {
   position: relative;
   padding-bottom: 20px; 
@@ -27,6 +34,25 @@ body{
   height: 1px; 
   background-color: white; 
   transition: width 0.5s ease;
+}
+.dark .section-animation {
+  position: relative;
+  padding-bottom: 20px; 
+ 
+}
+.dark .section-animation::after {
+  content: ''; 
+  position: absolute; 
+  bottom: 0px;
+  left: 50px; 
+  margin: 0 auto;
+  width: 0; 
+  height: 1px; 
+  background-color: black; 
+  transition: width 0.5s ease;
+}
+.dark .change-my-color {
+  fill: black;
 }
 
 /* Çizgi animasyonu */
@@ -55,3 +81,25 @@ body::-webkit-scrollbar-thumb {
   background-color: #DE4C36;
   border-radius: 10px;
 }
+/* styles.css */
+/* Menu Slide In */
+.menu-enter {
+  transform: translateX(100%);
+}
+.menu-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms ease-in-out;
+}
+.menu-exit {
+  transform: translateX(0);
+}
+.menu-exit-active {
+  transform: translateX(100%);
+  transition: transform 500ms ease-in-out;
+}
+/* Dark mode için stiller */
+body.dark {
+  background-color: #fff;
+  color: white;
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Nav from '../components/header';
+import Nav from '../components/Header';
 import AyselImage from '../assets/image/Aysel Alakbarova.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,15 +15,8 @@ import JavaScriptIcon from '../assets/skillsImg/javascript.svg';
 import jQueryIcon from '../assets/skillsImg/jquery.svg';
 import GitIcon from '../assets/skillsImg/git.svg';
 import GitHubIcon from '../assets/skillsImg/github.svg';
-// import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin, faInstagram, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-// import {  faCss3Alt } from '@fortawesome/free-brands-svg-icons';
-// import {  faSass} from '@fortawesome/free-brands-svg-icons';
-// import {  faJs } from '@fortawesome/free-brands-svg-icons';
-// import {  faJquery} from '@fortawesome/free-brands-svg-icons';
-// import {  faReact } from '@fortawesome/free-brands-svg-icons';
 import { faGitAlt } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -39,26 +32,28 @@ const home = () => {
 
         <>
             <Nav />
-            <section id='Home' className='h-screen bg-[url("src/assets/image/1.jpg")] bg-cover bg-center flex items-center' data-aos="fade-right">
-    <div className='flex flex-col-reverse md:flex-row items-center justify-evenly h-full w-11/12 mx-auto'>
-        <h1 className='text-4xl sm:text-5xl md:text-6xl text-white text-center md:text-left'>
-            <span className='text-3xl sm:text-4xl md:text-5xl leading-snug block md:inline'>
-                Hi there, I'm
-            </span><br />
-            Aysel Alakbarova<br />
-            <button className='mt-4 h-12 w-40 text-center text-white font-normal text-xl sm:text-2xl border border-white-transparent rounded-xl hover:bg-white hover:text-black transition duration-300 ease-out'>
-                Hire me
-            </button>
-        </h1>
-        <img src={AyselImage} data-aos="flip-right" className='w-8/12 sm:w-7/12 md:w-1/3 lg:w-1/4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl object-cover rounded-lg shadow-md mb-6 md:mb-0' alt="Aysel Alakbarova" />
-    </div>
-</section>
+            <section id='Home' className='h-screen bg-[url("src/assets/image/1.jpg")] bg-cover bg-center dark:bg-none dark:bg-white flex items-center' data-aos="fade-right">
+                <div className='flex flex-col-reverse md:flex-row items-center justify-evenly h-full w-11/12 mx-auto'>
+                    <h1 className='text-4xl sm:text-5xl md:text-6xl dark:text-[#DE4C36] text-white text-center md:text-left'>
+                        <span className='text-3xl sm:text-4xl md:text-5xl leading-snug block md:inline'>
+                            Hi there, I'm
+                        </span><br />
+                        Aysel Alakbarova<br />
+                        <button className='mt-4 h-12 w-40 text-center text-white dark:text-[#DE4C36] font-normal text-xl sm:text-2xl border border-white-transparent dark:border-[0.61px] dark:border-[#00000066] rounded-xl dark:hover:bg-[#DE4C36] dark:hover:text-white hover:bg-white hover:text-black transition duration-300 ease-out'>
+                            Hire me
+                        </button>
+
+
+                    </h1>
+                    <img src={AyselImage} data-aos="flip-right" className='w-8/12 sm:w-7/12 md:w-1/3 lg:w-1/4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl object-cover rounded-lg shadow-md mb-6 md:mb-0' alt="Aysel Alakbarova" />
+                </div>
+            </section>
 
 
 
-            <section id='about' className='p-4 bg-black-100 justify-around my-8 w-full mx-auto text-white flex flex-col items-center sm:p-8 sm:h-80vh sm:flex-row sm:w-11/12'>
+            <section id='about' className='p-4 bg-black-100 justify-around my-8 w-full mx-auto text-white dark:text-black dark:bg-white flex flex-col items-center sm:p-8 sm:h-80vh sm:flex-row sm:w-11/12'>
                 <div className='w-full sm:w-11/12' data-aos="fade-right">
-                    <h2 className='text-3xl font-medium mb-4 text-center italic text-700 text-custom-red sm:text-left sm:text-5xl sm:mb-6'>
+                    <h2 className='text-3xl font-medium mb-4 text-center  text-700 text-custom-red sm:text-left sm:text-5xl sm:mb-6'>
                         About Me
                     </h2>
                     <div className='flex items-center mb-4 sm:mb-6'>
@@ -97,35 +92,36 @@ const home = () => {
                 className="py-12 my-20 text-white section-animation"
                 data-aos="fade-up"
                 data-aos-duration="5000"
+
             >
-                <div className="w-full max-w-7xl mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4 ">
                     <div className="flex flex-col items-center sm:flex-row sm:items-center">
                         <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">
                             01
                         </span>
                         <h2
-                            className="text-4xl font-medium mb-4 text-center italic text-700 gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6"
-                            style={{ color: "#FFD700" }}
+                            className="text-4xl font-medium mb-4 text-center text-700 gradient-text   mx-0 sm:mx-3 sm:text-5xl sm:mb-6"
+
                         >
                             Skills
                         </h2>
                     </div>
                 </div>
 
-                <div className="bg-black text-white pb-10 w-full max-w-7xl mx-auto px-4">
+                <div className=" text-white pb-10 w-full max-w-7xl mx-auto px-4">
                     <div className="text-lg sm:text-xl">
-                        <ul className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 lg:grid-cols-4 sm:gap-6">
+                        <ul className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 lg:grid-cols-4 sm:gap-6 ">
                             {webTechnologies.technologies.map((item) => (
                                 <li
                                     key={item.name}
-                                    className="mb-4 p-4 text-center bg-customGray border shadow-custom hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer rounded-3xl flex flex-col items-center justify-center"
+                                    className="mb-4 p-4 text-center bg-customGray border dark:bg-[#D9D9D9] shadow-custom hover:border-gray-400 hover:text-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer rounded-3xl flex flex-col items-center justify-center"
                                 >
                                     <img
                                         src={item.img}
                                         alt={item.name}
                                         className="w-16 h-16 mb-4 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
                                     />
-                                    <span className="font-normal text-xl sm:text-2xl">
+                                    <span className="font-normal text-xl dark:text-black sm:text-2xl">
                                         {item.name}
                                     </span>
                                 </li>
@@ -140,15 +136,15 @@ const home = () => {
                 <div className='w-full max-w-7xl mx-auto px-4'>
                     <div className='flex flex-col items-center sm:flex-row sm:items-center'>
                         <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">02</span>
-                        <h2 className='text-4xl font-medium mb-4 text-center italic text-700 gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' style={{ color: '#FFD700' }}>
+                        <h2 className='text-4xl font-medium mb-4 text-center  text-700 gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6'>
                             Experience
                         </h2>
                     </div>
-                    <div className="bg-black text-white py-6 mb-12 px-4 flex flex-col space-y-8 sm:space-y-0 sm:py-8 sm:mb-24">
+                    <div className="dark:text-black text-white py-6 mb-12 px-4 flex flex-col space-y-8 sm:space-y-0 sm:py-8 sm:mb-24">
                         <div className="flex flex-col mb-4 sm:mb-8">
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                                 <span className="text-lg font-bold">Digigo</span>
-                                {/* <span className="text-sm mt-1 sm:mt-0 sm:ml-2">Full-time - 3 yrs 2 mos</span> */}
+
                             </div>
                             <div className="flex items-center mb-2 mt-4">
                                 <div className="w-4 h-4 bg-custom-red rounded-full mr-2"></div>
@@ -156,7 +152,7 @@ const home = () => {
                             </div>
                             <p className="text-sm mb-2">June 2024 · Present</p>
                             <p className="text-sm">
-                                Built, executed, and optimized all lead nurturing programs for ESP providers using our pre-built HTML.
+                                I manage all frontend development processes for ESP providers, designing interactive and user-friendly web applications using HTML, CSS, and JavaScript. I perform performance optimizations and make improvements based on user feedback.
                             </p>
                         </div>
 
@@ -167,7 +163,7 @@ const home = () => {
                             </div>
                             <p className="text-sm mb-2">Dec 2023 - May 2024 · 6 mo</p>
                             <p className="text-sm">
-                                Boosted brand awareness by 25% and led the development of a new marketing strategy.
+                                Gained experience in frontend development, actively participating in projects to enhance user interfaces and user experiences. Developed various web components using HTML and CSS, ensuring existing projects were user-friendly.
                             </p>
                         </div>
 
@@ -178,7 +174,7 @@ const home = () => {
                             </div>
                             <p className="text-sm mb-2">Sep 2023 - Dec 2023 · 4 mo</p>
                             <p className="text-sm">
-                                Boosted brand awareness by 25% and led the development of a new marketing strategy.
+                                Completed comprehensive training in HTML, CSS, and JavaScript. Developed professional skills through hands-on projects and real-world scenarios, applying modern frontend development techniques and user-centered design principles.
                             </p>
                         </div>
                     </div>
@@ -188,7 +184,7 @@ const home = () => {
                 <div className='w-full max-w-7xl mx-auto px-4'>
                     <div className='flex flex-col items-center mb-8 sm:flex-row sm:items-center'>
                         <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">03</span>
-                        <h2 className='text-4xl font-medium mb-4 text-center italic gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' style={{ color: '#FFD700' }}>
+                        <h2 className='text-4xl font-medium mb-4 text-center gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' style={{ color: '#FFD700' }}>
                             Projects
                         </h2>
                     </div>
@@ -196,41 +192,42 @@ const home = () => {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="relative border-white p-6 rounded-lg shadow-lg border border-transparent text-white transition-transform duration-400 transform hover:translate-y-4 hover:scale-105 hover:shadow-2xl hover:bg-gray-800"
+                                className="relative p-6 rounded-lg shadow-lg border border-transparent text-white dark:text-black transition-transform duration-300 transform hover:translate-y-2 hover:scale-105 hover:shadow-xl dark:bg-gray-800 bg-gray-900 dark:hover:bg-gray-700 hover:bg-gray-800"
                                 style={{
-                                    backgroundColor: '#1a1a1a', // Koyu gri arka plan
+                                    backgroundColor: '#1a1a1a', // Varsayılan koyu gri arka plan
                                 }}
                             >
                                 <div className="flex flex-col h-full justify-between">
                                     <div className="flex justify-between items-center mb-4">
-                                        <h3 className="text-lg font-semibold text-white sm:text-xl">{project.name}</h3>
+                                        <h3 className="text-lg font-semibold text-white dark:text-gray-200 sm:text-xl">{project.name}</h3>
                                         <div className="flex space-x-4">
-                                            <a href={project.github} className="text-gray-300 hover:text-white text-lg sm:text-xl">
+                                            <a href={project.github} className="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white text-lg sm:text-xl">
                                                 <FontAwesomeIcon icon={faGithub} />
                                             </a>
-                                            <a href={project.externalLink} className="text-gray-300 hover:text-white text-lg sm:text-xl">
+                                            <a href={project.externalLink} className="text-gray-300 dark:text-gray-300 hover:text-white dark:hover:text-white text-lg sm:text-xl">
                                                 <FontAwesomeIcon icon={faExternalLinkAlt} />
                                             </a>
                                         </div>
                                     </div>
-                                    <p className="text-md mb-4 sm:text-lg">{project.stack}</p>
-                                    <p className="text-sm text-gray-400">{project.description}</p>
+                                    <p className="text-md mb-4 sm:text-lg text-gray-400 dark:text-gray-400">{project.stack}</p>
+                                    <p className="text-sm text-gray-400 dark:text-gray-400">{project.description}</p>
                                 </div>
                             </div>
                         ))}
+
                     </div>
                 </div>
             </section>
 
-            <section id='contact' className='py-12 my-8 text-white section-animation' data-aos="fade-up" data-aos-duration="5000">
+            <section id='contact' className='py-12 my-8 text-white dark:text-black section-animation' data-aos="fade-up" data-aos-duration="5000">
                 <div className='w-full max-w-7xl mx-auto'>
                     <div className='flex flex-col items-center mb-8 sm:flex-row sm:items-center'>
                         <span className="text-3xl font-bold mb-2 text-custom-red sm:text-4xl">04</span>
-                        <h2 className='text-4xl font-medium mb-4 text-center italic gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' style={{ color: '#FFD700' }}>
+                        <h2 className='text-4xl font-medium mb-4 text-center  gradient-text mx-0 sm:mx-3 sm:text-5xl sm:mb-6' >
                             Contact
                         </h2>
                     </div>
-                    <div className="flex flex-col lg:flex-row justify-between pt-8 pb-24 space-y-8 lg:space-y-0">
+                    <div className="flex flex-col lg:flex-row justify-between items-center pt-2 pb-24 space-y-8 lg:space-y-0">
                         <div className='w-full lg:w-1/2 max-w-4xl mx-auto' data-aos="fade-right">
                             <div className='space-y-4 text-lg sm:text-xl'>
                                 <p>Embark on a visual journey through my creative realm, where innovation meets imagination.</p>
@@ -243,27 +240,27 @@ const home = () => {
                         </div>
 
                         <div className='w-full lg:w-1/2 max-w-4xl mx-auto' data-aos="fade-right">
-                            <div className="bg-black w-full sm:w-5/5 rounded-lg mx-auto p-6">
+                            <div className=" w-full sm:w-5/5 rounded-lg mx-auto p-6">
                                 <form className="space-y-5">
-                                    <label htmlFor="name" className="block text-white text-sm font-medium">Name</label>
+                                    <label htmlFor="name" className="dark:text-[#B3B3B3] block text-white text-sm font-medium">Name</label>
                                     <input
                                         type="text"
                                         placeholder="John Doe"
-                                        className="w-full bg-black text-white border-b-2 border-white outline-none py-2"
+                                        className="w-full bg-black text-white border-b-2 border-white outline-none py-2 dark:bg-white dark:border-[#D9D9D9]"
                                     />
-                                    <label htmlFor="email" className="block text-white text-sm font-medium">Email</label>
+                                    <label htmlFor="email" className=" dark:text-[#B3B3B3] block text-white text-sm font-medium">Email</label>
                                     <input
                                         type="email"
                                         placeholder="john.doe@example.com"
-                                        className="w-full bg-black text-white border-b-2 border-white outline-none py-2"
+                                        className="w-full bg-black text-white border-b-2 border-white dark:bg-white dark:border-[#D9D9D9] outline-none py-2"
                                     />
-                                    <label htmlFor="message" className="block text-white text-sm font-medium">Message</label>
+                                    <label htmlFor="message" className=" dark:text-[#B3B3B3] block text-white text-sm font-medium">Message</label>
                                     <textarea
                                         placeholder="What can we help you with?"
-                                        className="w-full h-32 bg-black text-white border-b-2 border-white outline-none py-2"
+                                        className="w-full h-32 bg-black text-white border-b-2 border-white outline-none py-2 dark:bg-white dark:border-[#D9D9D9]"
                                     />
                                     <button
-                                        className="w-full bg-white text-black py-2 rounded-md hover:bg-gray-200"
+                                        className="w-full bg-white dark:bg-[#2C2C2C] dark:text-white text-black py-2 rounded-md hover:bg-gray-200"
                                     >
                                         Contact me
                                     </button>

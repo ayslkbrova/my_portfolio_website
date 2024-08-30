@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class', 
   content: ["./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
@@ -11,11 +12,11 @@ export default {
         },
       },
       borderColor: {
-        'white-transparent': 'rgba(255, 255, 255, 0.4)', 
+        'white-transparent': 'rgba(255, 255, 255, 0.4)',
       }, colors: {
-        'custom-red': '#DE4C36', 
+        'custom-red': '#DE4C36',
         'customGray': '#161616',
-      },   boxShadow: {
+      }, boxShadow: {
         'custom': '0px 4px 22.1px 0px rgba(255, 250, 250, 0.25)',
       },
       animation: {
@@ -25,8 +26,12 @@ export default {
         '50vh': '50vh',
       },
       transitionDuration: {
-        '400': '400ms', 
+        '400': '400ms',
       },
+      transitionProperty: {
+        'transform': 'transform',
+      },
+      transform: ['responsive', 'hover', 'focus'],
     },
   },
   plugins: [],
