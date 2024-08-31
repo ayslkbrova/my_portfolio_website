@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
-import Nav from '../components/Header';
+import Nav from '../components/Nav';
 import AyselImage from '../assets/image/Aysel Alakbarova.jpeg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
